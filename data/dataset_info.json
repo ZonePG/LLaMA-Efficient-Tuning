@@ -561,5 +561,97 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "QAs": {
+    "file_name": "QAs.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "chosen"
+    }
+  },
+  "ds": {
+    "file_name": "ds.json",
+    "columns": {
+      "prompt": "prompt",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "ds_pro": {
+    "file_name": "ds_pro.json",
+    "columns": {
+      "prompt": "prompt",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "dialogue": {
+    "file_name": "dialogue.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output",
+      "history": "history"
+    }
+  },
+  "updated_ds": {
+    "file_name": "updated_ds.json",
+    "columns": {
+      "prompt": "prompt",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "updated_QAs_0.45": {
+    "file_name": "updated_QAs_0.45.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "chosen"
+    }
+  },
+  "updated_QAs_0.55": {
+    "file_name": "updated_QAs_0.55.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "chosen"
+    }
+  },
+  "pipeline_5257_final": {
+    "file_name": "pipeline_5257_final.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output",
+      "history": "history"
+    }
+  },
+  "SimpleMind": {
+    "file_name": "SimpleMind.json",
+    "columns": {
+      "prompt": "question",
+      "query": "description",
+      "response": "answer"
+    }
+  },
+  "100words_5level_5like_withID_cleaned": {
+    "file_name": "100words_5level_5like_withID_cleaned.json",
+    "columns": {
+      "prompt": "question",
+      "query": "description",
+      "response": "answer"
+    }
+  },
+  "zhihu": {
+    "file_name": "zhihu.json",
+    "columns": {
+      "prompt": "question",
+      "query": "description",
+      "response": "answer"
+    }
+  },
+  "random_output": {
+    "file_name": "random_output.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
   }
 }

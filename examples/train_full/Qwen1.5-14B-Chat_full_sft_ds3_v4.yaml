@@ -1,0 +1,37 @@
+### model
+model_name_or_path: /data/zonepg/models/Qwen/Qwen1.5-14B-Chat
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: QAs,ds,dialogue,pipeline_5257_final,SimpleMind,100words_5level_5like_withID_cleaned,zhihu
+template: qwen
+cutoff_len: 1024
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: saves/Qwen1.5-14B-Chat/full/sft/QAs+ds+dialogue+pipeline_5257_final+SimpleMind+100words_5level_5like_withID_cleaned+zhihu
+logging_steps: 10
+save_strategy: epoch
+plot_loss: true
+overwrite_output_dir: false
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 0.00001
+num_train_epochs: 10
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 500
